@@ -1,0 +1,15 @@
+</br></br></br></br></br>
+<table class="table table-striped">
+  <tr>
+    <th>Url</th>
+    <th>Shortened Url</th>
+    <th>Count</th>
+  </tr>
+  {% for link in links %}
+    <tr>
+      <td><a href="">{{link.url}}</a></td>
+      <td><a href="">{{link.token}}</a></td>
+      <td>{{link.count}}</td>
+    </tr>
+  {% endfor %}
+</table>

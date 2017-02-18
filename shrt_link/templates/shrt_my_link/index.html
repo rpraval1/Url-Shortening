@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {% include "./navbar.html" %}
+  {% include "./home.html" %}
+  {% include "./linklists.html" with links=links %}
+
+{% endblock %}
