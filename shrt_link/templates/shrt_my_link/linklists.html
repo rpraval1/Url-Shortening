@@ -7,8 +7,8 @@
   </tr>
   {% for link in links %}
     <tr>
-      <td><a href="">{{link.url}}</a></td>
-      <td><a href="">{{link.token}}</a></td>
+      <td><a href={{link.url}}>{{link.url}}</a></td>
+      <td><a href={{link.url}}>http://localhost:8000/{{link.token}}</a></td>
       <td>{{link.count}}</td>
     </tr>
   {% endfor %}

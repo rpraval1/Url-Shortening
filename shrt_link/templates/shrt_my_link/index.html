@@ -2,7 +2,7 @@
 
 {% block content %}
   {% include "./navbar.html" %}
-  {% include "./home.html" %}
+  {% include "./home.html" with form=form %}
   {% include "./linklists.html" with links=links %}
 
 {% endblock %}
