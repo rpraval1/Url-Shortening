@@ -8,8 +8,10 @@
   {% for link in links %}
     <tr>
       <td><a href={{link.url}}>{{link.url}}</a></td>
-      <td><a href={{link.url}}>http://localhost:8000/{{link.token}}</a></td>
-      <td>{{link.count}}</td>
+      <td><a href="http://localhost:8000/{{link.token}}"  target="_blank" id="{{link.token}}" class="counter">http://localhost:8000/{{link.token}}</a></td>
+      <td >
+        <label id="clickCount{{link.token}}" class="clickCount">{{link.clickCount}}</label>
+      </td>
     </tr>
   {% endfor %}
 </table>

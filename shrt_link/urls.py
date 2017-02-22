@@ -20,4 +20,6 @@ from shrt_my_link import views
 urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^admin/', admin.site.urls),
+    url(r'^(?P<token_id>[a-z0-9]*)/$', views.counter),
+
 ]
